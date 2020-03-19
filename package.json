@@ -1,10 +1,26 @@
 {
   "name": "eslint-config",
   "version": "0.0.1",
+  "engines": {
+    "node": ">=10"
+  },
   "description": "Ocupop ESLint default configuration",
   "main": "index.js",
   "repository": "https://github.com/ocupop/eslint-config",
   "author": "cdnicoll",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "checkFormat": "prettier --check '**/*.{js,jsx,ts,tsx,css,less,scss,graphql,yaml,yml,json,md}' ",
+    "format": "prettier --write '**/*.{js,jsx,ts,tsx,css,less,scss,graphql,yaml,yml,json,md}' "
+  },
+  "devDependencies": {
+    "@ocupop/prettier-config": "0.0.2",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^7.1.0",
+    "yargs": "^15.3.1"
+  }
 }
