@@ -1,0 +1,10 @@
+{
+  "name": "eslint-config",
+  "version": "0.0.1",
+  "description": "Ocupop ESLint default configuration",
+  "main": "index.js",
+  "repository": "https://github.com/ocupop/eslint-config",
+  "author": "cdnicoll",
+  "license": "MIT",
+  "private": false
+}
