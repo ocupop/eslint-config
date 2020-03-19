@@ -1,9 +1,13 @@
 {
   "name": "@ocupop/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "node": ">=10"
   },
+  "files": [
+    "index.js",
+    "setup.js"
+  ],
   "description": "Ocupop ESLint default configuration",
   "bin": "setup.js",
   "main": "index.js",
