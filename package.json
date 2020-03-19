@@ -5,6 +5,7 @@
     "node": ">=10"
   },
   "description": "Ocupop ESLint default configuration",
+  "bin": "setup.js",
   "main": "index.js",
   "repository": "https://github.com/ocupop/eslint-config",
   "author": "cdnicoll",

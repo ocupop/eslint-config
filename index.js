@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'prettier', 'prettier/react'],
+  extends: ['airbnb'],
   rules: {
     'react/jsx-filename-extension': [
       'error',
@@ -7,6 +7,8 @@ module.exports = {
         extensions: ['.js', '.jsx']
       }
     ],
+    semi: ['error', 'always'],
+    quotes: ['error', 'single'],
     'react/react-in-jsx-scope': 0,
     'react/require-default-props': 0,
     'react/forbid-prop-types': 1,
@@ -33,7 +35,7 @@ module.exports = {
   globals: {
     graphql: true
   },
-  plugins: ['prettier'],
+  plugins: [],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2017,
