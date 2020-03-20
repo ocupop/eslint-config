@@ -34,7 +34,7 @@ const lintPackage = '@ocupop/eslint-config'
 const lintPackagesToInstall = [
   'eslint',
   'eslint-config-airbnb',
-  'babel-eslint',
+  'babel-eslint@10.0.3',
   'eslint-plugin-jsx-a11y',
   'eslint-plugin-react',
   'eslint-plugin-import'
