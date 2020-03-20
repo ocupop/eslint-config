@@ -1,7 +1,3 @@
-// @TODO: Setup
-//  [ ] yarn add eslint --dev
-// END-TODO
-
 const fs = require('fs')
 const yargs = require('yargs')
 const inquirer = require('inquirer')
