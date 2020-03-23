@@ -7,7 +7,7 @@ module.exports = {
         extensions: ['.js', '.jsx']
       }
     ],
-    semi: ['error', 'always'],
+    semi: ['error', 'never'],
     quotes: ['error', 'single'],
     'react/react-in-jsx-scope': 0,
     'react/require-default-props': 0,
