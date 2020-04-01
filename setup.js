@@ -31,6 +31,14 @@ if (!fs.existsSync('package.json')) {
 }
 
 const lintPackage = '@ocupop/eslint-config'
+const lintPackagesToInstall = [
+  'eslint',
+  'eslint-config-airbnb',
+  'babel-eslint',
+  'eslint-plugin-jsx-a11y',
+  'eslint-plugin-react',
+  'eslint-plugin-import'
+].join(' ')
 
 const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'))
 packageJson.scripts = packageJson.scripts || {}
@@ -69,7 +77,7 @@ function addLinter() {
   fs.writeFileSync('package.json', JSON.stringify(packageJson, null, 2), 'utf8')
 
   // add packages to the project
-  childProccess.execSync(`npm install --save-dev ${lintPackage}`, {
+  childProccess.execSync(`npm install --save-dev ${lintPackage} ${lintPackagesToInstall}`, {
     stdio: 'inherit'
   })
 }
@@ -78,7 +86,7 @@ function addLinter() {
  * Updates the linter packages
  */
 function upgradeLinter() {
-  childProccess.execSync(`npm update ${lintPackage}`, {
+  childProccess.execSync(`npm update ${lintPackage} ${lintPackagesToInstall}`, {
     stdio: 'inherit'
   })
 }
