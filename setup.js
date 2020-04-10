@@ -32,12 +32,12 @@ if (!fs.existsSync('package.json')) {
 
 const lintPackage = '@ocupop/eslint-config'
 const lintPackagesToInstall = [
-  'eslint',
-  'eslint-config-airbnb',
-  'babel-eslint',
-  'eslint-plugin-jsx-a11y',
-  'eslint-plugin-react',
-  'eslint-plugin-import'
+  // 'eslint',
+  // 'eslint-config-airbnb',
+  // 'babel-eslint',
+  // 'eslint-plugin-jsx-a11y',
+  // 'eslint-plugin-react',
+  // 'eslint-plugin-import'
 ].join(' ')
 
 const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'))
